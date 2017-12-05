@@ -1,6 +1,6 @@
 1. Description
 
-Création du projet P3 du parcours "Développeur d'Application Web - PHP/Symfony"
+Création du projet P3 du parcours "Développeur d'Application Web - PHP/Symfony" - Projet en cours
 
 2. Contient
 
