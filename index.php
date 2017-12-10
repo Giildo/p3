@@ -40,7 +40,25 @@
 		</header>
 
 		<section id="actualites" class="row">
-			<p class="col-xs-12">Actualités</p>
+			<h2 class="col-xs-12">Actualités</h2>
+			<div class="col-xs-12">
+				<div class="row">
+					<h3 class="col-xs-12">Mise en ligne des films</h3>
+					<h4 class="col-xs-12">10/12/2017 - 21h02</h4>
+					<p class="col-xs-12">La liste des films vient d'être mise en ligne. Vous pouvez la consulter en vous rendant sur l'onglet <a href="#presentation_film" id="a_actualites">"La programmation "</a>.</p>
+				</div>
+				<div class="row">
+					<h3 class="col-xs-12">Ouverture des inscriptions en ligne</h3>
+					<h4 class="col-xs-12">05/12/2017 - 17h42</h4>
+					<p class="col-xs-12">Le module d'inscription pour les projections a été mis en ligne. Les projections sont ouvertes à tous, mais il est important de s'inscrire en amont afin que nous puissions estimer le nombre de personnes présentes.</p>
+				</div>
+				<div class="row">
+					<h3 class="col-xs-12">Autorisation pour le Parc Monceau</h3>
+					<h4 class="col-xs-12">01/12/2017 - 18h30</h4>
+					<p class="col-xs-12">La mairie nous a donné les autorisations nécessaires pour la projection des films. Le festival se tiendra du 5 au 8 août 2018.<br />
+					Les projections se feront du 18h à minuit.</p>
+				</div>
+			</div>
 		</section>
 
 		<section id="presentation_festival" class="row">
@@ -105,6 +123,18 @@
 					$('#img' + (j + 1)).attr('src', chemins[j] + '/' + i + '.jpg');
 				}
 			}, 2000);
+
+			$('#a_actualites').on('click', function(e) {
+				e.preventDefault();
+
+				if(this.hash !== "")
+				{
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				}
+			});
 
 			$('li>a').on('click', function(e) {
 				e.preventDefault();
