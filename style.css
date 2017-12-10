@@ -44,3 +44,8 @@ header h1:after {
    margin: auto;
    background-color: white;
 }
+
+#actualites, #presentation_festival, #presentation_film {
+   padding-top: 50px;
+   margin-top: -50px
+}
