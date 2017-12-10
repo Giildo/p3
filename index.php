@@ -31,6 +31,10 @@
 
 	<div class="container-fluid">
 		<header id="header" class="row">
+			<div>
+				<h1>Festival du Film de Plein Air de Monceau</h1>
+				<h2>Du 5 au 8 août de 18h à minuit</h2>
+			</div>
 			<img src="images/image_couverture.jpg" class="col-xs-12" />
 		</header>
 

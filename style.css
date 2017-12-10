@@ -14,3 +14,25 @@
 header img[class="col-xs-12"] {
    padding: 0;
 }
+
+header {
+   position: relative;
+}
+
+header div {
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   z-index: 500;
+   color: white;
+   text-align: center;
+   -webkit-transform: translate(0, -95%);
+   -ms-transform: translate(0, -95%);
+   -o-transform: translate(0, -95%);
+   transform: translate(0, -95%);
+   background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+}
+
+header h1, header h2 {
+   font-weight: bold;
+}
