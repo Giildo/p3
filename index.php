@@ -7,7 +7,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);">
 		<div class="container-fluid">
@@ -131,7 +131,7 @@
 				{
 					var hash = this.hash;
 					$('html, body').animate({
-						scrollTop: $(this.hash).offset().top
+						scrollTop: $(this.hash).offset().top - 49
 					}, 1000);
 				}
 			});
@@ -143,7 +143,7 @@
 				{
 					var hash = this.hash;
 					$('html, body').animate({
-						scrollTop: $(this.hash).offset().top
+						scrollTop: $(this.hash).offset().top - 49
 					}, 1000);
 				}
 			});
