@@ -8,7 +8,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar">
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#jojotique_menu">
@@ -16,7 +16,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Festival de Films en Plein Air</a>
+				<a href="#" class="navbar-brand" id="a_top">Festival de Films en Plein Air</a>
 			</div>
 			<div class="collapse navbar-collapse" id="jojotique_menu">
 				<ul class="nav navbar-nav navbar-right">
@@ -42,7 +42,7 @@
 			<p class="col-xs-12">Présentation du festival</p>
 		</section>
 
-		<section id="presentation_film" class="row">
+		<section id="presentation_film">
 			<div class="row">
 				<a href="#"><img src="images/2001_lodyssee_de_lespace/1.jpg" class="col-md-2 col-md-offset-3" id="img1" data-film="2001_lodyssee_de_lespace" /></a>
 				<a href="#"><img src="images/big_fish/1.jpg" class="col-md-2" id="img2" data-film="big_fish" /></a>
@@ -71,9 +71,9 @@
 	</footer>
 
 	<script
-   src="https://code.jquery.com/jquery-3.2.1.min.js"
-   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-   crossorigin="anonymous"></script>
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
 	<script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -111,6 +111,24 @@
 						scrollTop: $(this.hash).offset().top
 					}, 1000);
 				}
+			});
+
+			$(document).scroll(function(){
+				var top = document.documentElement.scrollTop;
+
+				if (top == 0) {
+					$('.navbar-inverse').attr('style', 'background:rgba(0,0,0,0);border-color:rgba(0,0,0,0);');
+				} else {
+					$('.navbar-inverse').removeAttr('style');
+				}
+			});
+
+			$('#a_top').click(function(e){
+				e.preventDefault();
+
+				$('html').animate({
+					scrollTop: '0'
+				}, 1000);
 			});
 		})
 	</script>

@@ -1,12 +1,4 @@
-body {
-   margin-top: 50px;
-}
-
 .col-md-2 {
-   padding: 0;
-}
-
-.col-xs-12 {
    padding: 0;
 }
 
@@ -15,7 +7,10 @@ body {
    background-color: red;
 }
 
-#header, #actualites, #presentation_festival, #presentation_film, #footer {
-   padding-top: 50px;
-   margin-top: -50px;
+.navbar-inverse {
+   transition: background-color 0.5s, border-color 0.5s, font-size;
+}
+
+header img[class="col-xs-12"] {
+   padding: 0;
 }
