@@ -34,5 +34,18 @@ header div {
 }
 
 header h1, header h2 {
-   font-weight: bold;
+   font-family: 'Bungee', cursive;
+}
+
+header h1:after {
+   content: '';
+   display: block;
+   height: 1px; width: 40%;
+   margin: auto;
+   background-color: white;
+}
+
+#actualites, #presentation_festival, #presentation_film {
+   padding-top: 50px;
+   margin-top: -50px
 }
