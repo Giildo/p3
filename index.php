@@ -8,54 +8,66 @@
 </head>
 <body>
 
-<header>
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-         <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#jojotique_menu">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">Festival de Films en Plein Air</a>
-         </div>
-         <div class="collapse navbar-collapse" id="jojotique_menu">
-            <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Le festival</a></li>
-               <li><a href="#">La programmation</a></li>
-               <li><a href="#">Actualités</a></li>
-               <li><a href="#">Nous connaitre</a></li>
-            </ul>
-         </div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+      <div class="navbar-header">
+         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#jojotique_menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a href="#" class="navbar-brand">Festival de Films en Plein Air</a>
       </div>
+      <div class="collapse navbar-collapse" id="jojotique_menu">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.php#actualites">Actualités</a></li>
+            <li><a href="index.php#presentation_festival">Le festival</a></li>
+            <li><a href="index.php#presentation_film">La programmation</a></li>
+            <li><a href="index.php#footer">Nous connaitre</a></li>
+         </ul>
+      </div>
+   </div>
+</nav>
 
-   </nav>
-</header>
+<div class="container-fluid">
+	<header id="header" class="row">
+		<img src="images/image_couverture.jpg" class="col-xs-12" />
+	</header>
 
-<section class="container-fluid">
-   <div class="row">
-      <a href="#"><img src="images/2001_lodyssee_de_lespace/1.jpg" class="col-md-2 col-md-offset-3" id="img1" data-film="2001_lodyssee_de_lespace" /></a>
-      <a href="#"><img src="images/big_fish/1.jpg" class="col-md-2" id="img2" data-film="big_fish" /></a>
-      <a href="#"><img src="images/edward_aux_mains_d_argent/1.jpg" class="col-md-2" id="img3" data-film="edward_aux_mains_d_argent" /></a>
-   </div>
-   <div class="row">
-      <a href="#"><img src="images/her/1.jpg" class="col-md-2 col-md-offset-3" id="img4" data-film="her" /></a>
-      <a href="#"><img src="images/into_the_wild/1.jpg" class="col-md-2" id="img5" data-film="into_the_wild" /></a>
-      <a href="#"><img src="images/la_haine/1.jpg" class="col-md-2" id="img6" data-film="la_haine" /></a>
-   </div>
-   <div class="row">
-      <a href="#"><img src="images/le_cercle_des_poetes_disparus/1.jpg" class="col-md-2 col-md-offset-3" id="img7" data-film="le_cercle_des_poetes_disparus" /></a>
-      <a href="#"><img src="images/melancholia/1.jpg" class="col-md-2" id="img8" data-film="melancholia" /></a>
-      <a href="#"><img src="images/realite/1.jpg" class="col-md-2" id="img9" data-film="realite" /></a>
-   </div>
-   <div class="row">
-      <a href="#"><img src="images/requiem_for_a_dream/1.jpg" class="col-md-2 col-md-offset-3" id="img10" data-film="requiem_for_a_dream" /></a>
-      <a href="#"><img src="images/under_the_skin/1.jpg" class="col-md-2" id="img11" data-film="under_the_skin" /></a>
-      <a href="#"><img src="images/vol_au_dessus_dun_nid_de_coucou/1.jpg" class="col-md-2" id="img12" data-film="vol_au_dessus_dun_nid_de_coucou" /></a>
-   </div>
-</section>
+	<section id="actualites" class="row">
+		<p class="col-xs-12">Actualités</p>
+	</section>
 
-<footer>
+	<section id="presentation_festival" class="row">
+		<p class="col-xs-12">Présentation du festival</p>
+	</section>
+
+	<section id="presentation_film" class="row">
+		<div class="row">
+		   <a href="#"><img src="images/2001_lodyssee_de_lespace/1.jpg" class="col-md-2 col-md-offset-3" id="img1" data-film="2001_lodyssee_de_lespace" /></a>
+		   <a href="#"><img src="images/big_fish/1.jpg" class="col-md-2" id="img2" data-film="big_fish" /></a>
+		   <a href="#"><img src="images/edward_aux_mains_d_argent/1.jpg" class="col-md-2" id="img3" data-film="edward_aux_mains_d_argent" /></a>
+		</div>
+		<div class="row">
+		   <a href="#"><img src="images/her/1.jpg" class="col-md-2 col-md-offset-3" id="img4" data-film="her" /></a>
+		   <a href="#"><img src="images/into_the_wild/1.jpg" class="col-md-2" id="img5" data-film="into_the_wild" /></a>
+		   <a href="#"><img src="images/la_haine/1.jpg" class="col-md-2" id="img6" data-film="la_haine" /></a>
+		</div>
+		<div class="row">
+		   <a href="#"><img src="images/le_cercle_des_poetes_disparus/1.jpg" class="col-md-2 col-md-offset-3" id="img7" data-film="le_cercle_des_poetes_disparus" /></a>
+		   <a href="#"><img src="images/melancholia/1.jpg" class="col-md-2" id="img8" data-film="melancholia" /></a>
+		   <a href="#"><img src="images/realite/1.jpg" class="col-md-2" id="img9" data-film="realite" /></a>
+		</div>
+		<div class="row">
+		   <a href="#"><img src="images/requiem_for_a_dream/1.jpg" class="col-md-2 col-md-offset-3" id="img10" data-film="requiem_for_a_dream" /></a>
+		   <a href="#"><img src="images/under_the_skin/1.jpg" class="col-md-2" id="img11" data-film="under_the_skin" /></a>
+		   <a href="#"><img src="images/vol_au_dessus_dun_nid_de_coucou/1.jpg" class="col-md-2" id="img12" data-film="vol_au_dessus_dun_nid_de_coucou" /></a>
+		</div>
+	</section>
+</div>
+
+<footer id="footer">
    <p>&copy Les films en Plein Air - Site réalisé par <a href="http://www.jojotique.fr">Jojotique</a></p>
 </footer>
 

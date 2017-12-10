@@ -5,3 +5,12 @@ body {
 .col-md-2 {
    padding: 0;
 }
+
+.col-xs-12 {
+   padding: 0;
+}
+
+#actualites, #presentation_festival {
+   height: 400px;
+   background-color: red;
+}
