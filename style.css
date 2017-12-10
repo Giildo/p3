@@ -14,3 +14,8 @@ body {
    height: 400px;
    background-color: red;
 }
+
+#header, #actualites, #presentation_festival, #presentation_film, #footer {
+   padding-top: 50px;
+   margin-top: -50px;
+}
