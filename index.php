@@ -3,11 +3,12 @@
 <head>
 	<title>Festival de Films en Plein Air</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);">
 		<div class="container-fluid">
@@ -32,7 +33,7 @@
 
 	<div class="container-fluid">
 		<header id="header" class="row">
-			<div>
+			<div class="col-xs-12">
 				<h1>Festival du Film de Plein Air de Monceau</h1>
 				<h2>Du 5 au 8 août de 18h à minuit</h2>
 			</div>
@@ -191,11 +192,11 @@
 			</div>
 
 		</section>
-	</div>
 
-	<footer id="footer">
-		<p>&copy Les films en Plein Air - Site réalisé par <a href="http://www.jojotique.fr">Jojotique</a></p>
-	</footer>
+		<footer id="footer" class="row">
+			<p class="col-xs-12">&copy Les films en Plein Air - Site réalisé par <a href="http://www.jojotique.fr">Jojotique</a></p>
+		</footer>
+	</div>
 
 	<script
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -266,15 +267,19 @@
 			});
 
 			//Nav qui disparait
-			$(document).scroll(function(){
-				var top = document.documentElement.scrollTop;
+			if(document.body.clientWidth >= 991) {
+				$(document).scroll(function(){
+					var top = document.documentElement.scrollTop;
 
-				if (top == 0) {
-					$('.navbar-inverse').attr('style', 'background:rgba(0,0,0,0);border-color:rgba(0,0,0,0);');
-				} else {
-					$('.navbar-inverse').removeAttr('style');
-				}
-			});
+					if (top == 0) {
+						$('.navbar-inverse').attr('style', 'background:rgba(0,0,0,0);border-color:rgba(0,0,0,0);');
+					} else {
+						$('.navbar-inverse').removeAttr('style');
+					}
+				});
+			} else {
+				$('.navbar-inverse').removeAttr('style');
+			}
 
 			$('#a_top').click(function(e){
 				e.preventDefault();

@@ -1,10 +1,17 @@
-.col-md-2 {
-   padding: 0;
+/* General */
+@media screen and (max-width: 991px) {
+   body {
+      margin-top: 50px;
+   }
 }
+
+/* Nav */
 
 .navbar-inverse {
    transition: background-color 0.5s, border-color 0.5s, font-size;
 }
+
+/* Header */
 
 header img[class="col-xs-12"] {
    padding: 0;
@@ -14,7 +21,7 @@ header {
    position: relative;
 }
 
-header div {
+header div[class="col-xs-12"] {
    width: 100%;
    position: absolute;
    top: 50%;
@@ -32,16 +39,37 @@ header h1, header h2, section h2 {
    font-family: 'Bungee', cursive;
 }
 
+@media screen and (max-width: 991px) {
+   header h1 {
+      font-size: 1.5em;
+   }
+
+   header h2 {
+      font-size: 1em;
+   }
+}
+
 header h1:after {
    content: '';
    display: block;
    height: 1px; width: 40%;
    margin: auto;
-   background-color: white;
+   background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
-section h2 {
-   font-size: 3em;
+/* Section */
+
+   /* General */
+@media screen and (min-width: 991px) {
+   section h2 {
+      font-size: 3em;
+   }
+}
+
+@media screen and (max-width: 991px){
+   section h2 {
+      font-size: 2em;
+   }
 }
 
 section h2:after {
@@ -50,6 +78,8 @@ section h2:after {
    height: 1px; width: 50%;
    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
+
+   /* Actualites */
 
 #actualites div[class="col-xs-12"] {
    padding-left: 60px;
@@ -81,6 +111,26 @@ section h2:after {
    margin: auto;
 }
 
+@media screen and (max-width: 991px) {
+   #actualites div[class="col-xs-12"] {
+      padding-left: 15px;
+   }
+
+   #actualites div[class="row"] {
+      margin: 5px -15px;
+   }
+
+   #actualites h3 {
+      text-align: center;
+   }
+
+   #actualites h4 {
+      display: none;
+   }
+}
+
+   /* Presentation festival */
+
 #presentation_festival {
    background-color: #e4e4e4;
 }
@@ -102,6 +152,30 @@ section h2:after {
    border-image: initial;
 }
 
+@media screen and (min-width: 991px) {
+   #presentation_festival iframe {
+      min-height: 400px;
+      height: 100%;
+      position: absolute;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+   #presentation_festival iframe {
+      width: 100%;
+      height: 400px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   #presentation_festival iframe {
+      width: 100%;
+      height: 200px;
+   }
+}
+
 #presentation_festival h3:nth-child(4):before, #presentation_festival h3:nth-child(8):before {
    content: '';
    display: block;
@@ -115,13 +189,7 @@ section h2:after {
    position: relative;
 }
 
-#presentation_festival iframe {
-   min-height: 400px;
-   height: 100%;
-   position: absolute;
-   padding-top: 20px;
-   padding-bottom: 20px;
-}
+   /* Presentation films */
 
 .bloc_film {
    position: relative;
@@ -164,4 +232,8 @@ section h2:after {
 
 .bloc_film:hover h4 {
    color: rgba(0,0,0,1);
+}
+
+.col-md-2 {
+   padding: 0;
 }
