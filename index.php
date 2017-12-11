@@ -62,7 +62,33 @@
 		</section>
 
 		<section id="presentation_festival" class="row">
-			<p class="col-xs-12">Présentation du festival</p>
+			<h2 class="col-xs-12">Présentation du festival</h2>
+			<div class="col-xs-12">
+				<div class="row" id="row_presentation_festival">
+					<div class="col-md-6">
+						<h3>Lieu</h3>
+						<p>Le festival se déroulera au coeur du Parc Monceau à Paris. Un écran et des sièges seront installés près des balançoires au centre du parc.</p>
+						<p>Accessible depuis la ligne 2 du métro, arrêt Monceau.</p>
+						<h3>Dates et horaires</h3>
+						<p>Le festival se déroulera du 5 au 8 août inclus.</p>
+						<p>Chaque soir trois films seront projetés à 18h, 20h et 22h.</p>
+						<p>Des horaires précis seront communiqués ultérieurement, lorsque la programmation des films sera définitive</p>
+						<h3>Prix</h3>
+						<p>Le festival est ouvert à tous et gratuit. Il est néanmoins nécessaire de s'inscrire en amont pour un soucis d'organisation.</p>
+						<form action="index.php" method="post">
+							<fieldset>
+								<legend>Inscription</legend>
+								<div class="form-group"><label for="nom">Nom et prénom</label><input type="text" id="nom" class="form-control"></div>
+								<div class="form-group"><label for="date">Date</label><input type="date" id="date" class="form-control"></div>
+								<div class="form-group"><label for="mail">Email</label><input type="email" id="mail" class="form-control"></div>
+								<div class="form-group"><label for="tel">Téléphone</label><input type="tel" id="tel" class="form-control"></div>
+								<input type="submit" name="Réserver" class="btn btn-primary pull-right">
+							</fieldset>
+						</form>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735531366547!2d2.3067663158246625!3d48.87968700716071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1512950476989" class="col-md-6" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
 		</section>
 
 		<section id="presentation_film">
