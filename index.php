@@ -91,27 +91,105 @@
 			</div>
 		</section>
 
-		<section id="presentation_film">
-			<div class="row">
-				<a href="#"><img src="images/2001_lodyssee_de_lespace/1.jpg" class="col-md-2 col-md-offset-3" id="img1" data-film="2001_lodyssee_de_lespace" /></a>
-				<a href="#"><img src="images/big_fish/1.jpg" class="col-md-2" id="img2" data-film="big_fish" /></a>
-				<a href="#"><img src="images/edward_aux_mains_d_argent/1.jpg" class="col-md-2" id="img3" data-film="edward_aux_mains_d_argent" /></a>
+		<section id="presentation_film" class="row">
+			<h2 class="col-xs-12">Programmation</h2>
+
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+				<a href="#">
+					<h3>2001 l'Odyssée de l'Espace</h3>
+					<h4>5 août - 18h</h4>
+					<img src="images/2001_lodyssee_de_lespace/1.jpg" id="img1" data-film="2001_lodyssee_de_lespace" />
+				</a>
 			</div>
-			<div class="row">
-				<a href="#"><img src="images/her/1.jpg" class="col-md-2 col-md-offset-3" id="img4" data-film="her" /></a>
-				<a href="#"><img src="images/into_the_wild/1.jpg" class="col-md-2" id="img5" data-film="into_the_wild" /></a>
-				<a href="#"><img src="images/la_haine/1.jpg" class="col-md-2" id="img6" data-film="la_haine" /></a>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>Big Fish</h3>
+					<h4>5 août - 20h</h4>
+					<img src="images/big_fish/1.jpg" id="img2" data-film="big_fish" />
+				</a>
 			</div>
-			<div class="row">
-				<a href="#"><img src="images/le_cercle_des_poetes_disparus/1.jpg" class="col-md-2 col-md-offset-3" id="img7" data-film="le_cercle_des_poetes_disparus" /></a>
-				<a href="#"><img src="images/melancholia/1.jpg" class="col-md-2" id="img8" data-film="melancholia" /></a>
-				<a href="#"><img src="images/realite/1.jpg" class="col-md-2" id="img9" data-film="realite" /></a>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>Edward aux Mains d'Argent</h3>
+					<h4>5 août - 22h</h4>
+					<img src="images/edward_aux_mains_d_argent/1.jpg" id="img3" data-film="edward_aux_mains_d_argent" />
+				</a>
 			</div>
-			<div class="row">
-				<a href="#"><img src="images/requiem_for_a_dream/1.jpg" class="col-md-2 col-md-offset-3" id="img10" data-film="requiem_for_a_dream" /></a>
-				<a href="#"><img src="images/under_the_skin/1.jpg" class="col-md-2" id="img11" data-film="under_the_skin" /></a>
-				<a href="#"><img src="images/vol_au_dessus_dun_nid_de_coucou/1.jpg" class="col-md-2" id="img12" data-film="vol_au_dessus_dun_nid_de_coucou" /></a>
+
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+				<a href="#">
+					<h3>Her</h3>
+					<h4>6 août - 18h</h4>
+					<img src="images/her/1.jpg" id="img4" data-film="her" />
+				</a>
 			</div>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>Into the Wild</h3>
+					<h4>6 août - 20h</h4>
+					<img src="images/into_the_wild/1.jpg" id="img5" data-film="into_the_wild" />
+				</a>
+			</div>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>La Haine</h3>
+					<h4>6 août - 22h</h4>
+					<img src="images/la_haine/1.jpg" id="img6" data-film="la_haine" />
+				</a>
+			</div>
+
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+				<a href="#">
+					<h3>Le Cercle des Poètes disparus</h3>
+					<h4>7 août - 18h</h4>
+					<img src="images/le_cercle_des_poetes_disparus/1.jpg" id="img7" data-film="le_cercle_des_poetes_disparus" />
+				</a>
+			</div>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>Melancholia</h3>
+					<h4>7 août - 20h</h4>
+					<img src="images/melancholia/1.jpg" id="img8" data-film="melancholia" />
+				</a>
+			</div>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>Réalité</h3>
+					<h4>7 août - 22h</h4>
+					<img src="images/realite/1.jpg" id="img9" data-film="realite" />
+				</a>
+			</div>
+
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+				<a href="#">
+					<h3>Requiem for a Dream</h3>
+					<h4>8 août - 18h</h4>
+					<img src="images/requiem_for_a_dream/1.jpg" id="img10" data-film="requiem_for_a_dream" />
+				</a>
+			</div>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>Under the Skin</h3>
+					<h4>8 août - 20h</h4>
+					<img src="images/under_the_skin/1.jpg" id="img11" data-film="under_the_skin" />
+				</a>
+			</div>
+
+			<div class="bloc_film col-md-2 col-sm-6 col-xs-12">
+				<a href="#">
+					<h3>Vol au-dessus d'un Nid de Coucou</h3>
+					<h4>8 août - 22h</h4>
+					<img src="images/vol_au_dessus_dun_nid_de_coucou/1.jpg" id="img12" data-film="vol_au_dessus_dun_nid_de_coucou" />
+				</a>
+			</div>
+
 		</section>
 	</div>
 
@@ -130,7 +208,9 @@
 
 	<script type="text/javascript">
 		$(function(){
-			var i = 0;
+			//Mouvement des photos
+			var i = 1;
+			var interval = 1;
 			var chemins = new Array();
 
 			for (var j = 0; j < 12; j++) {
@@ -138,18 +218,29 @@
 			}
 
 			setInterval(function(){
-				if(i >= 6)
-				{
-					i = 1;
+				if(interval == 2) {
+					if(i >= 6)
+					{
+						i = 1;
+					} else {
+						i++;
+					}
+				}
+
+				if(interval == 1) {
+					for (var j = 0; j < 12; j = j+2) {
+						$('#img' + (j + 1)).attr('src', chemins[j] + '/' + i + '.jpg');
+					}
+					interval = 2;
 				} else {
-					i++;
+					for (var j = 1; j < 12; j = j+2) {
+						$('#img' + (j + 1)).attr('src', chemins[j] + '/' + i + '.jpg');
+					}
+					interval = 1;
 				}
+			}, 1500);
 
-				for (var j = 0; j < 12; j++) {
-					$('#img' + (j + 1)).attr('src', chemins[j] + '/' + i + '.jpg');
-				}
-			}, 2000);
-
+			//Mouvement fluide et scrollspy
 			$('#a_actualites').on('click', function(e) {
 				e.preventDefault();
 
@@ -174,6 +265,7 @@
 				}
 			});
 
+			//Nav qui disparait
 			$(document).scroll(function(){
 				var top = document.documentElement.scrollTop;
 

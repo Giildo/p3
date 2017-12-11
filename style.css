@@ -122,3 +122,46 @@ section h2:after {
    padding-top: 20px;
    padding-bottom: 20px;
 }
+
+.bloc_film {
+   position: relative;
+}
+
+.bloc_film img {
+   width: 100%;
+}
+
+.bloc_film h3 {
+   display: inline-block;
+   position: absolute;
+   transition: background-color 0.5s, color 0.5s;
+   background-color: rgba(258,258,258,0);
+   color: rgba(0,0,0,0);
+   height: 100%; width: 100%;
+   margin: 0;
+   text-align: center;
+   padding: 30% 15px 0 15px;
+   font-family: 'Bungee', cursive;
+}
+
+.bloc_film h4 {
+   display: inline-block;
+   position: absolute;
+   transition: color 0.5s;
+   color: rgba(0,0,0,0);
+   height: 100%; width: 100%;
+   margin: 0;
+   text-align: center;
+   padding-top: 60%;
+   font-family: 'Bungee', cursive;
+   font-size: 1em;
+}
+
+.bloc_film:hover h3 {
+   background-color: rgba(258,258,258,0.5);
+   color: rgba(0,0,0,1);
+}
+
+.bloc_film:hover h4 {
+   color: rgba(0,0,0,1);
+}
