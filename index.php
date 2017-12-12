@@ -207,88 +207,9 @@
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
 
-	<script type="text/javascript">
-		$(function(){
-			//Mouvement des photos
-			var i = 1;
-			var interval = 1;
-			var chemins = new Array();
-
-			for (var j = 0; j < 12; j++) {
-				chemins[j] = 'images/' + $('#img' + (j + 1)).data('film');
-			}
-
-			setInterval(function(){
-				if(interval == 2) {
-					if(i >= 6)
-					{
-						i = 1;
-					} else {
-						i++;
-					}
-				}
-
-				if(interval == 1) {
-					for (var j = 0; j < 12; j = j+2) {
-						$('#img' + (j + 1)).attr('src', chemins[j] + '/' + i + '.jpg');
-					}
-					interval = 2;
-				} else {
-					for (var j = 1; j < 12; j = j+2) {
-						$('#img' + (j + 1)).attr('src', chemins[j] + '/' + i + '.jpg');
-					}
-					interval = 1;
-				}
-			}, 1500);
-
-			//Mouvement fluide et scrollspy
-			$('#a_actualites').on('click', function(e) {
-				e.preventDefault();
-
-				if(this.hash !== "")
-				{
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(this.hash).offset().top - 49
-					}, 1000);
-				}
-			});
-
-			$('li>a').on('click', function(e) {
-				e.preventDefault();
-
-				if(this.hash !== "")
-				{
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(this.hash).offset().top - 49
-					}, 1000);
-				}
-			});
-
-			//Nav qui disparait
-			if(document.body.clientWidth >= 991) {
-				$(document).scroll(function(){
-					var top = document.documentElement.scrollTop;
-
-					if (top == 0) {
-						$('.navbar-inverse').attr('style', 'background:rgba(0,0,0,0);border-color:rgba(0,0,0,0);');
-					} else {
-						$('.navbar-inverse').removeAttr('style');
-					}
-				});
-			} else {
-				$('.navbar-inverse').removeAttr('style');
-			}
-
-			$('#a_top').click(function(e){
-				e.preventDefault();
-
-				$('html').animate({
-					scrollTop: '0'
-				}, 1000);
-			});
-		})
-	</script>
+	<script src="script/js-nav.js"></script>
+	<script src="script/js-parallaxe.js"></script>
+	<script src="script/js-photo_movement.js"></script>
+	<script src="script/js-scrollspy.js"></script>
 </body>
 </html>
