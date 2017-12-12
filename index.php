@@ -33,11 +33,10 @@
 
 	<div class="container-fluid">
 		<header id="header" class="row">
-			<div class="col-xs-12">
+			<div id="header_titre" class="col-xs-12">
 				<h1>Festival du Film de Plein Air de Monceau</h1>
 				<h2>Du 5 au 8 août de 18h à minuit</h2>
 			</div>
-			<img src="images/image_couverture.jpg" class="col-xs-12" />
 		</header>
 
 		<section id="actualites" class="row">
@@ -61,6 +60,8 @@
 				</div>
 			</div>
 		</section>
+
+		<section id="image_monceau" class="row"></section>
 
 		<section id="presentation_festival" class="row">
 			<h2 class="col-xs-12">Présentation du festival</h2>
@@ -91,6 +92,8 @@
 				</div>
 			</div>
 		</section>
+
+		<div id="header_programmation" class="row"></div>
 
 		<section id="presentation_film" class="row">
 			<h2 class="col-xs-12">Programmation</h2>
@@ -211,5 +214,13 @@
 	<script src="script/js-parallaxe.js"></script>
 	<script src="script/js-photo_movement.js"></script>
 	<script src="script/js-scrollspy.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#header').parallaxe('50%', 0.5);
+			$('#image_monceau').parallaxe('50%', 0.5);
+			$('#header_programmation').parallaxe('50%', 0.5);
+		})
+	</script>
 </body>
 </html>

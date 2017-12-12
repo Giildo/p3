@@ -23,6 +23,9 @@ header img[class="col-xs-12"] {
 
 header {
    position: relative;
+   height: 1300px;
+   background: url(images/image_couverture.jpg) fixed top left no-repeat;
+   background-size: cover;
 }
 
 header div[class="col-xs-12"] {
@@ -133,6 +136,14 @@ section h2:after {
    }
 }
 
+   /* Image monceau */
+
+#image_monceau {
+   height: 800px;
+   background: url(images/fond_monceau.jpg) top left no-repeat fixed;
+   background-size: cover;
+}
+
    /* Presentation festival */
 
 #presentation_festival {
@@ -191,6 +202,14 @@ section h2:after {
 
 #row_presentation_festival {
    position: relative;
+}
+
+   /* header_programmation */
+
+#header_programmation {
+   height: 800px;
+   background: url(images/projection.jpg) top left no-repeat fixed;
+   background-size: cover;
 }
 
    /* Presentation films */

@@ -7,43 +7,42 @@
 
 $(function(){
    var $window = $(window); //Récupère la fenêtre en objet
-   var windowHeight = $window.height(); //Récupère la hauteur de la page
+   var window_hauteur = $window.height(); //Récupère la hauteur de la page
 
-   //Met à jour la taille si changement
+   //Met à jour la hauteur de la page si redimensionnement
    $window.resize(function () {
-      windowHeight = $window.height();
+      window_hauteur = $window.height();
    });
 
-   //Crée un plugin jQuery
-   $.fn.parallax = function(xpos = "50%", speedFactor = 0.1, outerHeight = true) {
+   //Crée un plugin jQuery à partir d'une fonction
+   $.fn.parallaxe = function(xPos = "50%", facteurVitesse = 0.1, hauteurTotale = true, margeComprise = true) {
       var $this = $(this);
-      var getHeight;
-      var firstTop;
-      var paddingTop = 0;
+      var fct_hauteur;
+      var topInitial;
 
-      //get the starting position of each element to have parallax applied to it
+      //récupère la position initiale de l'élément lorsque la fonction parallaxe est lancée
       $this.each(function(){
-          firstTop = $this.offset().top;
+          topInitial = $this.offset().top;
       });
 
-      if (outerHeight) {
-         getHeight = function(jqo) {
-            return jqo.outerHeight(true); //Récupère la hauteur totale de l'élément, true = margin compris
+      if (hauteurTotale) {
+         fct_hauteur = function(element) {
+            return element.outerHeight(margeComprise); //Récupère la hauteur totale de l'élément, marge comprise = true par défaut
          };
       } else {
-         getHeight = function(jqo) {
-            return jqo.height(); //Récupère juste la hauteur de l'élement sans les margin, padding et border
+         fct_hauteur = function(element) {
+            return element.height(); //Récupère juste la hauteur de l'élement sans les margin, padding et border
          };
       }
 
-      // function to be called whenever the window is scrolled or resized
+      //Fonction appelé si la page est redimensionnée ou scrollée
       function update(){
-         var pos = $window.scrollTop();
+         var windowPos = $window.scrollTop();
 
          $this.each(function(){
             var $element = $(this);
-            var top = $element.offset().top;
-            var height = getHeight($element);
+            var elementTop = $element.offset().top;
+            var elementHauteur = fct_hauteur($element);
 
             /*
             si :
@@ -51,16 +50,16 @@ $(function(){
             2. l'élément est plus bas que la fenêtre car sa position sur la page est supérieur à la hauteur de la fenêtre + position du scroll
             On sort de update
             */
-            if (top + height < pos || top > pos + windowHeight) {
+            if (elementTop + elementHauteur < windowPos || elementTop > windowPos + window_hauteur) {
                return;
+            } else {
+               $this.css('backgroundPosition', xPos + " " + Math.round((topInitial - windowPos) * facteurVitesse) + "px");
             }
-
-            $this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
          });
       }
 
       //lance update si la fenêtre est scrollé ou si elle est redimensionnée
       $window.scroll(update).resize(update);
-      update();
+      update(); //lance la fonction update la première fois que la page est chargée
    };
 })
