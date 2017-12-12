@@ -93,7 +93,13 @@
 			</div>
 		</section>
 
-		<div id="header_programmation" class="row"></div>
+		<div id="header_programmation" class="row">
+			<div id="ourson" class="hidden-md-down">
+				<div id="ourson2" class="hidden-md-down">
+					<div id="ourson3" class="hidden-md-down"></div>
+				</div>
+			</div>
+		</div>
 
 		<section id="presentation_film" class="row">
 			<h2 class="col-xs-12">Programmation</h2>
@@ -217,9 +223,14 @@
 
 	<script type="text/javascript">
 		$(function(){
-			$('#header').parallaxe('50%', 0.5);
-			$('#image_monceau').parallaxe('50%', 0.5);
-			$('#header_programmation').parallaxe('50%', 0.5);
+			if($(window).width() > 991) {
+				$('#header').parallaxe('50%', 0.5);
+				$('#image_monceau').parallaxe('50%', 0.5);
+				$('#header_programmation').parallaxe('50%', 0.5);
+				$('#ourson').parallaxe('75%', 0.2);
+				$('#ourson2').parallaxe('60%', 0.4);
+				$('#ourson3').parallaxe('68%', 0.5);
+			}
 		})
 	</script>
 </body>

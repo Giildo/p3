@@ -23,9 +23,19 @@ header img[class="col-xs-12"] {
 
 header {
    position: relative;
-   height: 1300px;
    background: url(images/image_couverture.jpg) fixed top left no-repeat;
    background-size: cover;
+}
+@media screen and (min-width: 991px) {
+   header {
+      height: 1300px;
+   }
+}
+
+@media screen and (max-width: 990px) {
+   header {
+      height: 200px;
+   }
 }
 
 header div[class="col-xs-12"] {
@@ -144,6 +154,12 @@ section h2:after {
    background-size: cover;
 }
 
+@media screen and (max-width: 991px) {
+   #image_monceau {
+      display: none;
+   }
+}
+
    /* Presentation festival */
 
 #presentation_festival {
@@ -206,10 +222,31 @@ section h2:after {
 
    /* header_programmation */
 
-#header_programmation {
+@media screen and (max-width: 991px) {
+   #ourson, #ourson2, #ourson3, #header_programmation {
+      display: none;
+   }
+}
+
+#ourson, #ourson2, #ourson3, #header_programmation {
    height: 800px;
+}
+
+#header_programmation {
    background: url(images/projection.jpg) top left no-repeat fixed;
    background-size: cover;
+}
+
+#ourson {
+   background: url(images/ourson.png) top left no-repeat fixed;
+}
+
+#ourson2 {
+   background: url(images/ourson2.png) top left no-repeat fixed;
+}
+
+#ourson3 {
+   background: url(images/ourson3.png) top left no-repeat fixed;
 }
 
    /* Presentation films */
