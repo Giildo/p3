@@ -149,9 +149,10 @@ section h2:after {
    /* Image monceau */
 
 #image_monceau {
-   height: 800px;
+   height: 950px;
    background: url(images/fond_monceau.jpg) top left no-repeat fixed;
    background-size: cover;
+   background-color: #e4e4e4;
 }
 
 @media screen and (max-width: 991px) {
