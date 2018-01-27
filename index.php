@@ -104,7 +104,7 @@
 		<section id="presentation_film" class="row">
 			<h2 class="col-xs-12">Programmation</h2>
 
-			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6 col-xs-12">
 				<a href="#">
 					<h3>2001 l'Odyssée de l'Espace</h3>
 					<h4>5 août - 18h</h4>
@@ -128,7 +128,7 @@
 				</a>
 			</div>
 
-			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6 col-xs-12">
 				<a href="#">
 					<h3>Her</h3>
 					<h4>6 août - 18h</h4>
@@ -152,7 +152,7 @@
 				</a>
 			</div>
 
-			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6 col-xs-12">
 				<a href="#">
 					<h3>Le Cercle des Poètes disparus</h3>
 					<h4>7 août - 18h</h4>
@@ -176,7 +176,7 @@
 				</a>
 			</div>
 
-			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6">
+			<div class="bloc_film col-md-offset-3 col-md-2 col-sm-6 col-xs-12">
 				<a href="#">
 					<h3>Requiem for a Dream</h3>
 					<h4>8 août - 18h</h4>
