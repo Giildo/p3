@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  oc_festival_front:
+    image: php:7.4-apache 
+    container_name: oc_festival_front
+    ports:
+      - "8082:80"
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.oc_festival_front.rule=Host(`oc-festival.jojotique.fr`)'
+      - 'traefik.http.routers.oc_festival_front.entrypoints=websecure'
+    volumes:
+      - ./:/var/www/html
+    restart: always
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
